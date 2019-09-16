@@ -162,7 +162,7 @@ public class PerfetcX extends Configured implements Tool {
       return -1;
     }
 
-    LOG.info("Tool: " + WordCount.class.getSimpleName());
+    LOG.info("Tool: " + PerfectX.class.getSimpleName());
     LOG.info(" - input path: " + args.input);
     LOG.info(" - output path: " + args.output);
     LOG.info(" - number of reducers: " + args.numReducers);
@@ -170,8 +170,8 @@ public class PerfetcX extends Configured implements Tool {
 
     Configuration conf = getConf();
     Job job = Job.getInstance(conf);
-    job.setJobName(WordCount.class.getSimpleName());
-    job.setJarByClass(WordCount.class);
+    job.setJobName(PerfectX.class.getSimpleName());
+    job.setJarByClass(PerfectX.class);
 
     job.setNumReduceTasks(args.numReducers);
 
@@ -206,6 +206,6 @@ public class PerfetcX extends Configured implements Tool {
    * @throws Exception if tool encounters an exception
    */
   public static void main(String[] args) throws Exception {
-    ToolRunner.run(new WordCount(), args);
+    ToolRunner.run(new PerfectX(), args);
   }
 }
