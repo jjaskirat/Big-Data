@@ -125,7 +125,7 @@ public class PerfetcX extends Configured implements Tool {
       context.write(key, SUM);
       }
     }
-  }
+  
 
   /**
    * Creates an instance of this tool.
