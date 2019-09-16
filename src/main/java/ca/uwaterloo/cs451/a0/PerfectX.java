@@ -130,6 +130,7 @@ public class PerfetcX extends Configured implements Tool {
   /**
    * Creates an instance of this tool.
    */
+  private PerfectX(){}
   private static final class Args {
     @Option(name = "-input", metaVar = "[path]", required = true, usage = "input path")
     String input;
