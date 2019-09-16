@@ -58,7 +58,7 @@ public class PerfetcX extends Configured implements Tool {
     @Override
     public void map(LongWritable key, Text value, Context context)
         throws IOException, InterruptedException {
-        int t = 0
+        int t = 0;
       for (String word : Tokenizer.tokenize(value.toString())) {
       if(word=="perfect"){
       t=1;
