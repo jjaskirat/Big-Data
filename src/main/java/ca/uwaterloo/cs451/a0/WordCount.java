@@ -58,9 +58,17 @@ public class WordCount extends Configured implements Tool {
     @Override
     public void map(LongWritable key, Text value, Context context)
         throws IOException, InterruptedException {
+      int t=0;
       for (String word : Tokenizer.tokenize(value.toString())) {
+        if(word.equals("perfect")){
+          t=1;
+          continue;
+        }
+        if (t==1){
         WORD.set(word);
         context.write(WORD, ONE);
+          break;
+        }
       }
     }
   }
