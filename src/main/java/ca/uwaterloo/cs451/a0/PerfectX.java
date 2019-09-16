@@ -46,7 +46,7 @@ import java.util.Map;
 /**
  * Simple word count demo.
  */
-public class WordCount extends Configured implements Tool {
+public class PerfectX extends Configured implements Tool {
   private static final Logger LOG = Logger.getLogger(WordCount.class);
 
   // Mapper: emits (token, 1) for every word occurrence.
@@ -128,7 +128,7 @@ public class WordCount extends Configured implements Tool {
   /**
    * Creates an instance of this tool.
    */
-  private WordCount() {}
+  private PrivateX() {}
 
   private static final class Args {
     @Option(name = "-input", metaVar = "[path]", required = true, usage = "input path")
@@ -160,7 +160,7 @@ public class WordCount extends Configured implements Tool {
       return -1;
     }
 
-    LOG.info("Tool: " + WordCount.class.getSimpleName());
+    LOG.info("Tool: " + PrivateX.class.getSimpleName());
     LOG.info(" - input path: " + args.input);
     LOG.info(" - output path: " + args.output);
     LOG.info(" - number of reducers: " + args.numReducers);
@@ -168,8 +168,8 @@ public class WordCount extends Configured implements Tool {
 
     Configuration conf = getConf();
     Job job = Job.getInstance(conf);
-    job.setJobName(WordCount.class.getSimpleName());
-    job.setJarByClass(WordCount.class);
+    job.setJobName(PrivateX.class.getSimpleName());
+    job.setJarByClass(PrivateX.class);
 
     job.setNumReduceTasks(args.numReducers);
 
@@ -204,6 +204,6 @@ public class WordCount extends Configured implements Tool {
    * @throws Exception if tool encounters an exception
    */
   public static void main(String[] args) throws Exception {
-    ToolRunner.run(new WordCount(), args);
+    ToolRunner.run(new PrivateX(), args);
   }
 }
