@@ -46,7 +46,7 @@ import java.util.Map;
 /**
  * Simple word count demo.
  */
-public class PerfetcX extends Configured implements Tool {
+public class PerfectX extends Configured implements Tool {
   private static final Logger LOG = Logger.getLogger(PerfectX.class);
 
   // Mapper: emits (token, 1) for every word occurrence.
@@ -58,16 +58,16 @@ public class PerfetcX extends Configured implements Tool {
     @Override
     public void map(LongWritable key, Text value, Context context)
         throws IOException, InterruptedException {
-        int t = 0;
+      int t=0;
       for (String word : Tokenizer.tokenize(value.toString())) {
-      if(word=="perfect"){
-      t=1;
-      continue;
-      }
-      if(t==1){
+        if(word.equals("perfect")){
+          t=1;
+          continue;
+        }
+        if (t==1){
         WORD.set(word);
         context.write(WORD, ONE);
-        break;
+          break;
         }
       }
     }
@@ -120,17 +120,16 @@ public class PerfetcX extends Configured implements Tool {
       while (iter.hasNext()) {
         sum += iter.next().get();
       }
-      if(sum > 1){
       SUM.set(sum);
       context.write(key, SUM);
-      }
     }
   }
 
   /**
    * Creates an instance of this tool.
    */
-  private PerfectX(){}
+  private PerfectX() {}
+
   private static final class Args {
     @Option(name = "-input", metaVar = "[path]", required = true, usage = "input path")
     String input;
