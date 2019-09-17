@@ -6,7 +6,8 @@
 - User: j6bhatia
 
 # Answer 3:
-
+- Maps : 14
+- Reduce : 1
 
 # Answer 4:
 Waterloo appears 3620 times
