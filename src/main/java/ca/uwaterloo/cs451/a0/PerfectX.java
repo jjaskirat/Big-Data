@@ -120,8 +120,10 @@ public class PerfectX extends Configured implements Tool {
       while (iter.hasNext()) {
         sum += iter.next().get();
       }
+      if(sum>1){
       SUM.set(sum);
       context.write(key, SUM);
+      }
     }
   }
 
