@@ -35,7 +35,7 @@ Query: white red OR rose AND pluck AND <br>
 1714623     In sign whereof I pluck a white rose too. <br>
 
 ### DataSci
-Query: big data AND hadoop spark OR AND
+Query: big data AND hadoop spark OR AND <br>
 7602731 Computer security.0143  Some organizations are turning to big data platforms , su... <br>
 169356674       Index of electronics articles.0001      0-9 16VSB -- 2VSB -- 32VSB -- 4000 series -- ... <br>
 1065070474      Syncsort.0003   The result was a business with a niche product portfolio originall... <br>
