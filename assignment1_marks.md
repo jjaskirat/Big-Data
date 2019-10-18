@@ -1,4 +1,4 @@
-# CS 451/651 Big Data Infrastructure (Winter 2019)
+# CS 451/651 Big Data Infrastructure (Fall 2019)
 ## Assignment 1 Marking
 
 **Student details**
@@ -32,19 +32,19 @@ mark: 0/5
 
 **Test 1**
 pair runs on linux
-mark: 0/5
+mark: 5/5
 
 **Test 2**
 stripes run on linux
-mark: 0/5
+mark: 5/5
 
 **Test 3**
 pair runs on datasci
-mark: 0/5
+mark: 5/5
 
 **Test 4**
 stripe runs on datasci
-mark: 0/5
+mark: 5/5
 
 **Test 5**
 memory config
@@ -62,9 +62,9 @@ mark: 0/3
 private test on datasci
 mark: 0/3
 
-**feedback :** Execution could not find JAR. Memory configs are commented out.
+**feedback :** Regraded after having fixed building the assignment. Your assignment fails to build because the `PerfectX` class has a constructor called `PrivateX`.
 
 **Final grade**
-mark: 20.0/70.0
+mark: 40.0/70.0
 
-summary: 20817626,j6bhatia,Jaski-waterloo,20.0/70.0
+summary: 20817626,j6bhatia,Jaski-waterloo,40.0/70.0
