@@ -16,7 +16,7 @@ github:Jaski-waterloo
 
 **Test 5** Bigram Relative Frequency - Pair Impl on Datasci mark: 2.9/5
 
-**Test 6** Bigram Relative Frequency - Stripe Impl on Datasci mark: 2/5
+**Test 6** Bigram Relative Frequency - Stripe Impl on Datasci mark: 5/5
 
 **Test 7** PMI - Pair Impl on Datasci mark: 5/5
 
@@ -24,9 +24,8 @@ github:Jaski-waterloo
 
 **feedback :** 
 I checked the format; in test 1,4,5, and 8, most of your answers are still wrong.
-test 6: no ‘(dream,’ in your result.
 
 **Final grade**
-mark: 25.9/40.0
+mark: 28.9/40.0
 
-summary: 20817626,j6bhatia,Jaski-waterloo,25.9/40.0
+summary: 20817626,j6bhatia,Jaski-waterloo,28.9/40.0
