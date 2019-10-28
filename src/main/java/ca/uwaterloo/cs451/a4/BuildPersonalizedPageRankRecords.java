@@ -58,7 +58,7 @@ import java.util.Set;
  * @author Jimmy Lin
  * @author Michael Schatz
  */
-public class BuildPageRankRecords extends Configured implements Tool {
+public class BuildPersonalizedPageRankRecords extends Configured implements Tool {
   private static final Logger LOG = Logger.getLogger(BuildPageRankRecords.class);
 
   private static final String NODE_CNT_FIELD = "node.cnt";
