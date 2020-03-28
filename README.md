@@ -1,1 +1,1 @@
-# bigdata2019f
+# BigData Projects in Scala and Hadoop
